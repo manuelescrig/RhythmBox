@@ -1,5 +1,5 @@
 # RhythmBox
-A **Rhythm Box** System for your iOS app 🎵. The easiest way to create Rhythm patterns in Swift.
+A **Rhythm Box** System for your iOS app 🎵. The easiest way to create **Music Rhythm Patterns** in Swift.
 
 
 [![CI Status](http://img.shields.io/travis/manuelescrig/RhythmBox.svg?style=flat)](https://travis-ci.org/manuelescrig/RhythmBox)
@@ -8,6 +8,7 @@ A **Rhythm Box** System for your iOS app 🎵. The easiest way to create Rhythm 
 [![Platform](https://img.shields.io/cocoapods/p/RhythmBox.svg?style=flat)](http://cocoapods.org/pods/RhythmBox)
 [![Language](https://img.shields.io/badge/language-swift-oragne.svg?style=flat)](https://developer.apple.com/swift)
 
+<p align="center"><img src="https://github.com/manuelescrig/RhythmBox/blob/master/Slice%201.png?raw=true"></p>
 
 
 ## What can I do with RhythmBox?
@@ -24,9 +25,10 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ### Requirements
 
-Requires iOS SDK version > 8.0
+- iOS 8.0+ / tvOS 9.0+
+- Xcode 8.0+
+- Swift 3.0+
 
-Requires Swift 3
 
 ### Installation with CocoaPods
 
@@ -141,6 +143,10 @@ rhythmBox.perform {CurrentBeat, CurrentSubBeat, CurrentNote in
 
 See [Changelog.md](https://github.com/manuelescrig/RhythmBox/blob/master/CHANGELOG.md)
 
+Contribute
+
+Contributions are welcomed and encouraged 💜.
+
 ## Author
 
 - Manuel Escrig Ventura, [@manuelescrig](https://www.twitter.com/manuelescrig/)
@@ -151,5 +157,3 @@ See [Changelog.md](https://github.com/manuelescrig/RhythmBox/blob/master/CHANGEL
 ## License
 
 RhythmBox is available under the MIT license. See the [LICENSE](https://github.com/manuelescrig/RhythmBox/blob/master/LICENSE) file for more info.
-
-Icons made by [Gregor Cresnar](http://www.flaticon.com/authors/gregor-cresnar) is licensed by [Creative Commons BY 3.0](http://creativecommons.org/licenses/by/3.0/)
