@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RhythmBox_Example' do
+  pod 'RhythmBox', :path => '../'
+
+  target 'RhythmBox_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
