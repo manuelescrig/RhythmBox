@@ -1,0 +1,722 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E1DC2F26C301FC7A1B7EF169A6E76DE /* Pods-RhythmBox_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B2A5DBF35B76A0495F737DFCED8237 /* Pods-RhythmBox_Example-dummy.m */; };
+		2D4E0608BE050DEF13B50D7B49618A00 /* Pods-RhythmBox_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD84238C31B9CA1ADA2EEF1BDB5E813 /* Pods-RhythmBox_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B277443337DB34B4EFF94E7742B71D3 /* Pods-RhythmBox_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B60F4B2E5CBBA9A0D25B8C533991E4A9 /* Pods-RhythmBox_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53B0F37F6544F97061D80090858A6AAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		61E6E776D65260ADF2E0E94BCA68675C /* Pods-RhythmBox_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE394F73F37B11080C4BC422346FF01 /* Pods-RhythmBox_Tests-dummy.m */; };
+		64F8D9CB1DDDBAF500988CF3 /* RhythmBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F8D9CA1DDDBAF500988CF3 /* RhythmBox.swift */; };
+		65B819F892DB012D8972A401CFED2B69 /* RhythmBox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02588D5E9EC58A5E93627952BCDEE8BB /* RhythmBox-dummy.m */; };
+		9CDA8C1FF7AE263D4500E75D57AC3E01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		E2AD37EEE67015BE811D7A4EA2D2B9F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		F79506B0D865A778F2397F9291F91B0D /* RhythmBox-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3863510CE3F30C490F25DD9130BB948C /* RhythmBox-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B635CE23BC9B250146ADAEC9646ABB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAE943E27F0C21E9F39CAD83E28D3D0D;
+			remoteInfo = RhythmBox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00CA77743CC6E837BA0BBD0FFE140D09 /* Pods_RhythmBox_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RhythmBox_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		02588D5E9EC58A5E93627952BCDEE8BB /* RhythmBox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RhythmBox-dummy.m"; sourceTree = "<group>"; };
+		088B674EDB99365C5F95707131D240B5 /* Pods-RhythmBox_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RhythmBox_Tests.modulemap"; sourceTree = "<group>"; };
+		1EBD6491D882D806AAEBFB4907430486 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27E0E07FD299C478235C02CB9FF14142 /* Pods-RhythmBox_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RhythmBox_Tests-resources.sh"; sourceTree = "<group>"; };
+		2EECC39EF1A70D4B92375109FE463F44 /* Pods-RhythmBox_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RhythmBox_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		31EDFAA965EB38382EDBC690C6B177C1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37F70145397C38CA785808B2D657B9CE /* Pods-RhythmBox_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RhythmBox_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3863510CE3F30C490F25DD9130BB948C /* RhythmBox-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RhythmBox-umbrella.h"; sourceTree = "<group>"; };
+		3F9C0BAB7EF0603A53A1F016575B54D9 /* Pods-RhythmBox_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RhythmBox_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		52BBF2E9117618951C7BDE987FD5CE71 /* RhythmBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RhythmBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52EB23A9A86DACCAFD14F207E712721F /* Pods-RhythmBox_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RhythmBox_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		597464D75CF0BD6C4A8D6A4BEC596FE1 /* RhythmBox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RhythmBox-prefix.pch"; sourceTree = "<group>"; };
+		5D60C8FEABAAABD58F46732592529629 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64F8D9CA1DDDBAF500988CF3 /* RhythmBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RhythmBox.swift; sourceTree = "<group>"; };
+		786BDE77CC9A067E2E10D875987DFAA1 /* Pods-RhythmBox_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RhythmBox_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8398B6F6CB2B87C884C83B661E273138 /* Pods-RhythmBox_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RhythmBox_Example-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95F55A3BC7BE3844E4BB6778F3F73358 /* RhythmBox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RhythmBox.modulemap; sourceTree = "<group>"; };
+		97888097325AB46EA5934BA2CF0CDBDC /* Pods-RhythmBox_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RhythmBox_Example.release.xcconfig"; sourceTree = "<group>"; };
+		ADD84238C31B9CA1ADA2EEF1BDB5E813 /* Pods-RhythmBox_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RhythmBox_Example-umbrella.h"; sourceTree = "<group>"; };
+		B316AA2EC865512C18DB05D9E5FB6F1A /* Pods-RhythmBox_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RhythmBox_Example-resources.sh"; sourceTree = "<group>"; };
+		B4B2A5DBF35B76A0495F737DFCED8237 /* Pods-RhythmBox_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RhythmBox_Example-dummy.m"; sourceTree = "<group>"; };
+		B60F4B2E5CBBA9A0D25B8C533991E4A9 /* Pods-RhythmBox_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RhythmBox_Tests-umbrella.h"; sourceTree = "<group>"; };
+		BF89FB9B357B69AC576FC45E6061F1FA /* Pods-RhythmBox_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RhythmBox_Example.modulemap"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CED7E6365E6DCB5AC6EDA3413FF0FC35 /* Pods-RhythmBox_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RhythmBox_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D46E1070CC67D029C24B8741D124C8EB /* RhythmBox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RhythmBox.xcconfig; sourceTree = "<group>"; };
+		F0D16A0A7700C707085BBCE00D556CD6 /* Pods-RhythmBox_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RhythmBox_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F948346E49352A28AFC127B44ABCDA90 /* Pods-RhythmBox_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RhythmBox_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		FB8FB9E067F985D3BDED5196BCFC70E1 /* Pods_RhythmBox_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RhythmBox_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDE394F73F37B11080C4BC422346FF01 /* Pods-RhythmBox_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RhythmBox_Tests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53F7EAB0FC57449D13FEE1675DDCEA49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53B0F37F6544F97061D80090858A6AAD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78F3B16478F9058A627BD0BD83A45EBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2AD37EEE67015BE811D7A4EA2D2B9F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2EE19BC6A34E8DCA32D57246D8608CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CDA8C1FF7AE263D4500E75D57AC3E01 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CD4C1FF328FC1F3B7F846AFD5571C79 /* RhythmBox */ = {
+			isa = PBXGroup;
+			children = (
+				64F46DCF56E193D882B5DC27A1A7B60F /* RhythmBox */,
+				C16188C3C83231B76D2796A1965D21D6 /* Support Files */,
+			);
+			name = RhythmBox;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		64F46DCF56E193D882B5DC27A1A7B60F /* RhythmBox */ = {
+			isa = PBXGroup;
+			children = (
+				7E16F28A84C13435095E4726211A94D7 /* Classes */,
+			);
+			path = RhythmBox;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				E2096D62C8A5942D7F867AA3FF0C12C9 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				C91EEFC43D46C83F7717C39F92957BF9 /* Products */,
+				A716C478DD121D41B6AB39D04492E731 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7E16F28A84C13435095E4726211A94D7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				64F8D9CA1DDDBAF500988CF3 /* RhythmBox.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7E38418E290DB9518251C0A7747BEDCB /* Pods-RhythmBox_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1EBD6491D882D806AAEBFB4907430486 /* Info.plist */,
+				088B674EDB99365C5F95707131D240B5 /* Pods-RhythmBox_Tests.modulemap */,
+				3F9C0BAB7EF0603A53A1F016575B54D9 /* Pods-RhythmBox_Tests-acknowledgements.markdown */,
+				F0D16A0A7700C707085BBCE00D556CD6 /* Pods-RhythmBox_Tests-acknowledgements.plist */,
+				FDE394F73F37B11080C4BC422346FF01 /* Pods-RhythmBox_Tests-dummy.m */,
+				52EB23A9A86DACCAFD14F207E712721F /* Pods-RhythmBox_Tests-frameworks.sh */,
+				27E0E07FD299C478235C02CB9FF14142 /* Pods-RhythmBox_Tests-resources.sh */,
+				B60F4B2E5CBBA9A0D25B8C533991E4A9 /* Pods-RhythmBox_Tests-umbrella.h */,
+				786BDE77CC9A067E2E10D875987DFAA1 /* Pods-RhythmBox_Tests.debug.xcconfig */,
+				CED7E6365E6DCB5AC6EDA3413FF0FC35 /* Pods-RhythmBox_Tests.release.xcconfig */,
+			);
+			name = "Pods-RhythmBox_Tests";
+			path = "Target Support Files/Pods-RhythmBox_Tests";
+			sourceTree = "<group>";
+		};
+		A716C478DD121D41B6AB39D04492E731 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA2F831BEED1AC6AAB7834300C73DC38 /* Pods-RhythmBox_Example */,
+				7E38418E290DB9518251C0A7747BEDCB /* Pods-RhythmBox_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C16188C3C83231B76D2796A1965D21D6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				31EDFAA965EB38382EDBC690C6B177C1 /* Info.plist */,
+				95F55A3BC7BE3844E4BB6778F3F73358 /* RhythmBox.modulemap */,
+				D46E1070CC67D029C24B8741D124C8EB /* RhythmBox.xcconfig */,
+				02588D5E9EC58A5E93627952BCDEE8BB /* RhythmBox-dummy.m */,
+				597464D75CF0BD6C4A8D6A4BEC596FE1 /* RhythmBox-prefix.pch */,
+				3863510CE3F30C490F25DD9130BB948C /* RhythmBox-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/RhythmBox";
+			sourceTree = "<group>";
+		};
+		C91EEFC43D46C83F7717C39F92957BF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00CA77743CC6E837BA0BBD0FFE140D09 /* Pods_RhythmBox_Example.framework */,
+				FB8FB9E067F985D3BDED5196BCFC70E1 /* Pods_RhythmBox_Tests.framework */,
+				52BBF2E9117618951C7BDE987FD5CE71 /* RhythmBox.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2096D62C8A5942D7F867AA3FF0C12C9 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CD4C1FF328FC1F3B7F846AFD5571C79 /* RhythmBox */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		FA2F831BEED1AC6AAB7834300C73DC38 /* Pods-RhythmBox_Example */ = {
+			isa = PBXGroup;
+			children = (
+				5D60C8FEABAAABD58F46732592529629 /* Info.plist */,
+				BF89FB9B357B69AC576FC45E6061F1FA /* Pods-RhythmBox_Example.modulemap */,
+				37F70145397C38CA785808B2D657B9CE /* Pods-RhythmBox_Example-acknowledgements.markdown */,
+				2EECC39EF1A70D4B92375109FE463F44 /* Pods-RhythmBox_Example-acknowledgements.plist */,
+				B4B2A5DBF35B76A0495F737DFCED8237 /* Pods-RhythmBox_Example-dummy.m */,
+				8398B6F6CB2B87C884C83B661E273138 /* Pods-RhythmBox_Example-frameworks.sh */,
+				B316AA2EC865512C18DB05D9E5FB6F1A /* Pods-RhythmBox_Example-resources.sh */,
+				ADD84238C31B9CA1ADA2EEF1BDB5E813 /* Pods-RhythmBox_Example-umbrella.h */,
+				F948346E49352A28AFC127B44ABCDA90 /* Pods-RhythmBox_Example.debug.xcconfig */,
+				97888097325AB46EA5934BA2CF0CDBDC /* Pods-RhythmBox_Example.release.xcconfig */,
+			);
+			name = "Pods-RhythmBox_Example";
+			path = "Target Support Files/Pods-RhythmBox_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3673D11F3C5CFB4423839857B03FAD9D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B277443337DB34B4EFF94E7742B71D3 /* Pods-RhythmBox_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DE2C952D49BAD2A1CE701528D6D795C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F79506B0D865A778F2397F9291F91B0D /* RhythmBox-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F124017EF6F3D589B2C74085B35DED63 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D4E0608BE050DEF13B50D7B49618A00 /* Pods-RhythmBox_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		439698E284A7E2502AE6ED08F2D1CD2F /* Pods-RhythmBox_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F32F317129595D44001E90100C9F97F /* Build configuration list for PBXNativeTarget "Pods-RhythmBox_Tests" */;
+			buildPhases = (
+				F24B6A8040017D44DD81129BC4C43969 /* Sources */,
+				53F7EAB0FC57449D13FEE1675DDCEA49 /* Frameworks */,
+				3673D11F3C5CFB4423839857B03FAD9D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-RhythmBox_Tests";
+			productName = "Pods-RhythmBox_Tests";
+			productReference = FB8FB9E067F985D3BDED5196BCFC70E1 /* Pods_RhythmBox_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6586103144BA0C695A98510B9CFDB178 /* Pods-RhythmBox_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B28D630B65652A10E6B3C338A7942532 /* Build configuration list for PBXNativeTarget "Pods-RhythmBox_Example" */;
+			buildPhases = (
+				1C03F681D7CBED366EF737448F648ED1 /* Sources */,
+				78F3B16478F9058A627BD0BD83A45EBF /* Frameworks */,
+				F124017EF6F3D589B2C74085B35DED63 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0C1F2F0B51E18408CDDE5CE303FE518 /* PBXTargetDependency */,
+			);
+			name = "Pods-RhythmBox_Example";
+			productName = "Pods-RhythmBox_Example";
+			productReference = 00CA77743CC6E837BA0BBD0FFE140D09 /* Pods_RhythmBox_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DAE943E27F0C21E9F39CAD83E28D3D0D /* RhythmBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F463CF01757599ACF38D97380AC48B41 /* Build configuration list for PBXNativeTarget "RhythmBox" */;
+			buildPhases = (
+				50364A5FA0871234994098270F5CFA44 /* Sources */,
+				A2EE19BC6A34E8DCA32D57246D8608CD /* Frameworks */,
+				7DE2C952D49BAD2A1CE701528D6D795C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RhythmBox;
+			productName = RhythmBox;
+			productReference = 52BBF2E9117618951C7BDE987FD5CE71 /* RhythmBox.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					439698E284A7E2502AE6ED08F2D1CD2F = {
+						LastSwiftMigration = 0800;
+					};
+					6586103144BA0C695A98510B9CFDB178 = {
+						LastSwiftMigration = 0800;
+					};
+					DAE943E27F0C21E9F39CAD83E28D3D0D = {
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = C91EEFC43D46C83F7717C39F92957BF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6586103144BA0C695A98510B9CFDB178 /* Pods-RhythmBox_Example */,
+				439698E284A7E2502AE6ED08F2D1CD2F /* Pods-RhythmBox_Tests */,
+				DAE943E27F0C21E9F39CAD83E28D3D0D /* RhythmBox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C03F681D7CBED366EF737448F648ED1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E1DC2F26C301FC7A1B7EF169A6E76DE /* Pods-RhythmBox_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50364A5FA0871234994098270F5CFA44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65B819F892DB012D8972A401CFED2B69 /* RhythmBox-dummy.m in Sources */,
+				64F8D9CB1DDDBAF500988CF3 /* RhythmBox.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F24B6A8040017D44DD81129BC4C43969 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61E6E776D65260ADF2E0E94BCA68675C /* Pods-RhythmBox_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0C1F2F0B51E18408CDDE5CE303FE518 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RhythmBox;
+			target = DAE943E27F0C21E9F39CAD83E28D3D0D /* RhythmBox */;
+			targetProxy = 2B635CE23BC9B250146ADAEC9646ABB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0F8DF8E3BA023CBFAD7F4FC7FE7697B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CED7E6365E6DCB5AC6EDA3413FF0FC35 /* Pods-RhythmBox_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RhythmBox_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RhythmBox_Tests/Pods-RhythmBox_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RhythmBox_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		43DBF60F84879F9AD253C1EBF83D6341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F948346E49352A28AFC127B44ABCDA90 /* Pods-RhythmBox_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RhythmBox_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RhythmBox_Example/Pods-RhythmBox_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RhythmBox_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		653A4E1110999267D98E3DA32201AB84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D46E1070CC67D029C24B8741D124C8EB /* RhythmBox.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RhythmBox/RhythmBox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RhythmBox/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RhythmBox/RhythmBox.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RhythmBox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		84D9A26A7BA347782D72099A6280E010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D46E1070CC67D029C24B8741D124C8EB /* RhythmBox.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RhythmBox/RhythmBox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RhythmBox/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RhythmBox/RhythmBox.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RhythmBox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B9390C7221FCA0813F1C33A0FAC6D897 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 786BDE77CC9A067E2E10D875987DFAA1 /* Pods-RhythmBox_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RhythmBox_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RhythmBox_Tests/Pods-RhythmBox_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RhythmBox_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D80143206B7DD5555E47985B548B0BD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97888097325AB46EA5934BA2CF0CDBDC /* Pods-RhythmBox_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RhythmBox_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RhythmBox_Example/Pods-RhythmBox_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RhythmBox_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F32F317129595D44001E90100C9F97F /* Build configuration list for PBXNativeTarget "Pods-RhythmBox_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9390C7221FCA0813F1C33A0FAC6D897 /* Debug */,
+				0F8DF8E3BA023CBFAD7F4FC7FE7697B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B28D630B65652A10E6B3C338A7942532 /* Build configuration list for PBXNativeTarget "Pods-RhythmBox_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43DBF60F84879F9AD253C1EBF83D6341 /* Debug */,
+				D80143206B7DD5555E47985B548B0BD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F463CF01757599ACF38D97380AC48B41 /* Build configuration list for PBXNativeTarget "RhythmBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				653A4E1110999267D98E3DA32201AB84 /* Debug */,
+				84D9A26A7BA347782D72099A6280E010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

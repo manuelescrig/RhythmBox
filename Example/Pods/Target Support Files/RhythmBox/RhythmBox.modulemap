@@ -1,0 +1,6 @@
+framework module RhythmBox {
+  umbrella header "RhythmBox-umbrella.h"
+
+  export *
+  module * { export * }
+}

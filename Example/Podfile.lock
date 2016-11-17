@@ -1,0 +1,16 @@
+PODS:
+  - RhythmBox (0.1.0)
+
+DEPENDENCIES:
+  - RhythmBox (from `../`)
+
+EXTERNAL SOURCES:
+  RhythmBox:
+    :path: ../
+
+SPEC CHECKSUMS:
+  RhythmBox: b46bb91e7ca7d1d0e67e4065f3fe34fc54f383c4
+
+PODFILE CHECKSUM: 1610aa1e02a6c2ea1900c80962882ac7a2cab5e3
+
+COCOAPODS: 1.1.1

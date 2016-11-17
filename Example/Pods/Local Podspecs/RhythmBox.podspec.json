@@ -1,0 +1,22 @@
+{
+  "name": "RhythmBox",
+  "version": "0.1.0",
+  "summary": "A short description of RhythmBox.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/RhythmBox",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Manuel Escrig Ventura": "manuelescrig@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/RhythmBox.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "RhythmBox/Classes/**/*"
+}
