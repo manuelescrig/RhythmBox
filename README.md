@@ -117,7 +117,7 @@ rhythmBox.perform {CurrentBeat, CurrentSubBeat, CurrentNote in
 
 ###### Example 2
 
-Create a 150 BPM signal with a time signature of 6/8.
+Create a 150 BPM signal with a time signature of 6/8 with default subdivision of <img src="https://github.com/manuelescrig/RhythmBox/blob/master/Resources/1.png">.
 
 ```swift
 
@@ -134,19 +134,69 @@ rhythmBox.perform {CurrentBeat, CurrentSubBeat, CurrentNote in
 
 ###### Example 3
 
-Create a 90 BPM signal with a time signature of 3/4 and subdivision of 
+Create a 90 BPM signal with a time signature of 3/4 and subdivision of <img src="https://github.com/manuelescrig/RhythmBox/blob/master/Resources/2.png">
+
 
 ```swift
 
-let rhythmBox = RhythmBox(bpm: 90, timeSignature: (3,4), subdivision: "1011")
+let rhythmBox = RhythmBox(bpm: 90, timeSignature: (3,4), subdivision: "11")
 rhythmBox.perform {CurrentBeat, CurrentSubBeat, CurrentNote in
 
-print("CurrentBeat", CurrentBeat)
-return .resume
+    print("CurrentBeat", CurrentBeat)
+    return .resume
 }
 
 
 ```
+
+###### Example 4
+
+Create a 90 BPM signal with a time signature of 3/4 and subdivision of <img src="https://github.com/manuelescrig/RhythmBox/blob/master/Resources/3.png">
+
+```swift
+
+let rhythmBox = RhythmBox(bpm: 90, timeSignature: (3,4), subdivision: "111")
+rhythmBox.perform {CurrentBeat, CurrentSubBeat, CurrentNote in
+
+    print("CurrentBeat", CurrentBeat)
+    return .resume
+}
+
+
+```
+
+###### Example 5
+
+Create a 90 BPM signal with a time signature of 3/4 and subdivision of <img src="https://github.com/manuelescrig/RhythmBox/blob/master/Resources/3b.png">
+
+```swift
+
+let rhythmBox = RhythmBox(bpm: 90, timeSignature: (3,4), subdivision: "011")
+rhythmBox.perform {CurrentBeat, CurrentSubBeat, CurrentNote in
+
+    print("CurrentBeat", CurrentBeat)
+    return .resume
+}
+
+
+```
+
+###### Example 6
+
+Create a 90 BPM signal with a time signature of 3/4 and subdivision of <img src="https://github.com/manuelescrig/RhythmBox/blob/master/Resources/4.png">
+
+```swift
+
+let rhythmBox = RhythmBox(bpm: 90, timeSignature: (3,4), subdivision: "10111")
+rhythmBox.perform {CurrentBeat, CurrentSubBeat, CurrentNote in
+
+    print("CurrentBeat", CurrentBeat)
+    return .resume
+}
+
+
+```
+
 
 ## Roadmap
 - [x] CocoaPods support
@@ -158,7 +208,7 @@ return .resume
 
 See [Changelog.md](https://github.com/manuelescrig/RhythmBox/blob/master/CHANGELOG.md)
 
-Contribute
+## Contribute
 
 Contributions are welcomed and encouraged 💜.
 
