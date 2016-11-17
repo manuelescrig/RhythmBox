@@ -1,14 +1,13 @@
+<p align="center"><img src="https://github.com/manuelescrig/RhythmBox/blob/master/Slice%201.png?raw=true"></p>
+
 # RhythmBox
 A **Rhythm Box** System for your iOS app 🎵. The easiest way to create **Music Rhythm Patterns** in Swift.
-
 
 [![CI Status](http://img.shields.io/travis/manuelescrig/RhythmBox.svg?style=flat)](https://travis-ci.org/manuelescrig/RhythmBox)
 [![Version](https://img.shields.io/cocoapods/v/RhythmBox.svg?style=flat)](http://cocoapods.org/pods/RhythmBox)
 [![License](https://img.shields.io/cocoapods/l/RhythmBox.svg?style=flat)](http://cocoapods.org/pods/RhythmBox)
 [![Platform](https://img.shields.io/cocoapods/p/RhythmBox.svg?style=flat)](http://cocoapods.org/pods/RhythmBox)
 [![Language](https://img.shields.io/badge/language-swift-oragne.svg?style=flat)](https://developer.apple.com/swift)
-
-<p align="center"><img src="https://github.com/manuelescrig/RhythmBox/blob/master/Slice%201.png?raw=true"></p>
 
 
 ## What can I do with RhythmBox?
@@ -71,7 +70,7 @@ import RhythmBox
 ###### 2. Create a RhythmBox class
 
 ```swift
-let rhythmBox = RhythmBox(bpm: 120, timeSignature: (4,4), subdivision: "1")
+let rhythmBox = RhythmBox(bpm: 120, timeSignature: (4,4))
 
 ```
 
@@ -131,7 +130,23 @@ rhythmBox.perform {CurrentBeat, CurrentSubBeat, CurrentNote in
 
 
 ```
+♪
 
+###### Example 3
+
+Create a 90 BPM signal with a time signature of 3/4 and subdivision of 
+
+```swift
+
+let rhythmBox = RhythmBox(bpm: 90, timeSignature: (3,4), subdivision: "1011")
+rhythmBox.perform {CurrentBeat, CurrentSubBeat, CurrentNote in
+
+print("CurrentBeat", CurrentBeat)
+return .resume
+}
+
+
+```
 
 ## Roadmap
 - [x] CocoaPods support
