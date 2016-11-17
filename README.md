@@ -1,5 +1,5 @@
 # RhythmBox
-A **Rhythm Box** System for your iOS app 🎵.
+A **Rhythm Box** System for your iOS app 🎵. The easiest way to create Rhythm patterns in Swift.
 
 
 [![CI Status](http://img.shields.io/travis/manuelescrig/RhythmBox.svg?style=flat)](https://travis-ci.org/manuelescrig/RhythmBox)
@@ -8,14 +8,12 @@ A **Rhythm Box** System for your iOS app 🎵.
 [![Platform](https://img.shields.io/cocoapods/p/RhythmBox.svg?style=flat)](http://cocoapods.org/pods/RhythmBox)
 [![Language](https://img.shields.io/badge/language-swift-oragne.svg?style=flat)](https://developer.apple.com/swift)
 
-<p align="center"><img src="https://cloud.githubusercontent.com/assets/1849990/15137846/645a0d18-168c-11e6-96e2-651d8f8de3b0.gif" align="center" height="600" width="800" ></p>
 
 
-## Features
-- [x] Customizable contacts cells
-- [x] Customizable contact items cells
-- [x] Different sizes and responsive design
-- [x] Multiple delegate methods
+## What can I do with RhythmBox?
+- [x] Generate a BPM or RPM Tempo
+- [x] Select the Time Signature
+- [x] Create a Rhythm pattern
 
 
 ## Demo Project
@@ -60,57 +58,74 @@ To integrate RhythmBox into your Xcode project manually, just include the filest
 
 ### Usage
 
+To Generate a constant BPM signal is as simple as this.
+
 ###### 1. Import class
 
 ```swift
 import RhythmBox
 ```
 
-###### 2. 
+###### 2. Create a RhythmBox class
 
 ```swift
-
+let rhythmBox = RhythmBox(bpm: 120, timeSignature: (4,4), subdivision: "1")
 
 ```
 
-###### 3. 
+###### 3. Start the Rhythm
 
 ```swift
+rhythmBox.perform {CurrentBeat, CurrentSubBeat, CurrentNote in
 
+    print("CurrentBeat", CurrentBeat)
+    print("CurrentSubBeat", CurrentSubBeat)
+    print("CurrentNote", CurrentNote)
+
+    return .resume
+}
 
 ```
 
-###### 4. 
+###### 4. Stop the Rhythm 
 
 ```swift
-
-
-```
-
-###### 5. 
-
-```swift
-
-
-```
-
-### Example
-
-###### Case 1
-
-<p align="center"><img src="https://cloud.githubusercontent.com/assets/1849990/15117532/42b3110c-1608-11e6-81ce-36a493962c8b.gif" align="center" height="78" width="332" ></p>
-
-```swift
-
+rhythmBox.stop()
 
 ```
 
 
-###### Case 2
+### Examples
 
-<p align="center"><img src="https://cloud.githubusercontent.com/assets/1849990/15117199/c853d546-1606-11e6-924a-15e8dcd0e709.gif" align="center"  height="97" width="332" ></p>
+###### Example 1
+
+Create a 120 BPM signal with a block.
 
 ```swift
+
+let rhythmBox = RhythmBox(bpm: 120)
+rhythmBox.perform {CurrentBeat, CurrentSubBeat, CurrentNote in
+
+    print("CurrentBeat", CurrentBeat)
+    return .resume
+}
+
+
+```
+
+
+###### Example 2
+
+Create a 150 BPM signal with a time signature of 6/8.
+
+```swift
+
+let rhythmBox = RhythmBox(bpm: 150, timeSignature: (6,8))
+rhythmBox.perform {CurrentBeat, CurrentSubBeat, CurrentNote in
+
+    print("CurrentBeat", CurrentBeat)
+    return .resume
+}
 
 
 ```

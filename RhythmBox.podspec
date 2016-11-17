@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
   s.version          = '1.0.0'
   s.summary          = 'A Rhythm Box System for your iOS app 🎵'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+The easiest way to create Rhythm patterns in Swift. A **Rhythm Box** System for your iOS app 🎵.    
+DESC
   s.homepage         = 'https://github.com/manuelescrig/RhythmBox'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
