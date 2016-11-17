@@ -59,7 +59,7 @@ public typealias Subdivision = String
 public typealias PerformClosure = (CurrentBeat, CurrentSubBeat, CurrentNote) -> NextStep
 
 /**
- The enumeration describes the next step 'Tempo' has to do whenever the timer is triggered
+ The enumeration describes the next step 'RhythmBox' has to do whenever the timer is triggered
  - parameter pause:    Pauses the timer.
  - parameter resume:   Continues the timer.
  */
@@ -81,16 +81,16 @@ fileprivate extension NextStep {
 }
 
 
-// MARK: - Tempo class
+// MARK: - RhythmBox class
 
 /**
- # Tempo class 🎚
- The Tempo class allows the user to easily create a BPM timer
+ # RhythmBox class 🎵
+ The RhythmBox class allows the user to easily create a BPM timer
  with time signature, subdivision and current beat features
  
- See also: [Tempo github site](https://github.com/manuelescrig/Tempo)
+ See also: [RhythmBox github site](https://github.com/manuelescrig/RhythmBox)
  */
-open class Tempo {
+open class RhythmBox {
     
     
     // MARK: - Private properties
@@ -188,7 +188,7 @@ open class Tempo {
     // MARK: - Public methods
     
     /**
-     Sets a new 'BPM' value to the Tempo timer
+     Sets a new 'BPM' value to the 'RhythmBox' timer
      - parameter bpm: The value in beats per minute
      */
     public func setBPM(bpm: BPM) {
@@ -196,7 +196,7 @@ open class Tempo {
     }
     
     /**
-     Sets a new 'TimeSignature' value to the Tempo timer
+     Sets a new 'TimeSignature' value to the 'RhythmBox' timer
      - parameter timeSignature: Describe the time signature with two numerals
      */
     public func setTimeSignature(timeSignature: TimeSignature) {
@@ -204,7 +204,7 @@ open class Tempo {
     }
     
     /**
-     Sets a new 'Subdivision' value to the Tempo timer
+     Sets a new 'Subdivision' value to the 'RhythmBox' timer
      - parameter subdivision: Describe subdivision type
      */
     public func setSubdivision(subdivision: Subdivision) {
@@ -212,7 +212,7 @@ open class Tempo {
     }
     
     /**
-     Starts the Tempo timer and performs the action when the timer is triggered
+     Starts the 'RhythmBox' timer and performs the action when the timer is triggered
      The closure should return a boolean that indicates to stop or not the timer after
      the trigger. Return 'resume' to continue, return 'pause' to stop it
      */
@@ -233,7 +233,7 @@ open class Tempo {
     }
     
     /**
-     Stops the tempo timer
+     Stops the 'RhythmBox' timer
      */
     public func stop() {
         _timer?.invalidate()
@@ -243,7 +243,7 @@ open class Tempo {
     }
     
     /**
-     Restarts the tempo timer
+     Restarts the 'RhythmBox' timer
      */
     public func restart() {
         stop()
@@ -253,9 +253,9 @@ open class Tempo {
 }
 
 
-// MARK: - Tempo Class extensions
+// MARK: - 'RhythmBox' Class extensions
 
-fileprivate extension Tempo {
+fileprivate extension RhythmBox {
     
     /**
      Trigger function
@@ -292,6 +292,6 @@ fileprivate extension Selector {
     /**
      Triggered selector
      */
-    static let Triggered = #selector(Tempo._trigger(timer:))
+    static let Triggered = #selector(RhythmBox._trigger(timer:))
 }
 
