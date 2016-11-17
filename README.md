@@ -111,13 +111,11 @@ rhythmBox.perform {CurrentBeat, CurrentSubBeat, CurrentNote in
     return .resume
 }
 
-
 ```
 
 
 ###### Example 2
-
-Create a 150 BPM signal with a time signature of 6/8 with default subdivision of <img src="https://github.com/manuelescrig/RhythmBox/blob/master/Resources/1.png">.
+Create a 150 BPM signal with a time signature of 6/8 with default subdivision of <img src="https://github.com/manuelescrig/RhythmBox/blob/master/Resources/1.png" height="50">
 
 ```swift
 
@@ -127,14 +125,11 @@ rhythmBox.perform {CurrentBeat, CurrentSubBeat, CurrentNote in
     print("CurrentBeat", CurrentBeat)
     return .resume
 }
-
-
 ```
-♪
+
 
 ###### Example 3
-
-Create a 90 BPM signal with a time signature of 3/4 and subdivision of <img src="https://github.com/manuelescrig/RhythmBox/blob/master/Resources/2.png">
+Create a 90 BPM signal with a time signature of 3/4 and subdivision of <img src="https://github.com/manuelescrig/RhythmBox/blob/master/Resources/2.png" height="50">
 
 
 ```swift
@@ -145,13 +140,11 @@ rhythmBox.perform {CurrentBeat, CurrentSubBeat, CurrentNote in
     print("CurrentBeat", CurrentBeat)
     return .resume
 }
-
-
 ```
 
-###### Example 4
 
-Create a 90 BPM signal with a time signature of 3/4 and subdivision of <img src="https://github.com/manuelescrig/RhythmBox/blob/master/Resources/3.png">
+###### Example 4
+Create a 90 BPM signal with a time signature of 3/4 and subdivision of <img src="https://github.com/manuelescrig/RhythmBox/blob/master/Resources/3.png" height="50"> 
 
 ```swift
 
@@ -161,13 +154,11 @@ rhythmBox.perform {CurrentBeat, CurrentSubBeat, CurrentNote in
     print("CurrentBeat", CurrentBeat)
     return .resume
 }
-
-
 ```
 
-###### Example 5
 
-Create a 90 BPM signal with a time signature of 3/4 and subdivision of <img src="https://github.com/manuelescrig/RhythmBox/blob/master/Resources/3b.png">
+###### Example 5
+Create a 90 BPM signal with a time signature of 3/4 and subdivision of <img src="https://github.com/manuelescrig/RhythmBox/blob/master/Resources/3b.png" height="50">
 
 ```swift
 
@@ -177,13 +168,11 @@ rhythmBox.perform {CurrentBeat, CurrentSubBeat, CurrentNote in
     print("CurrentBeat", CurrentBeat)
     return .resume
 }
-
-
 ```
 
-###### Example 6
 
-Create a 90 BPM signal with a time signature of 3/4 and subdivision of <img src="https://github.com/manuelescrig/RhythmBox/blob/master/Resources/4.png">
+###### Example 6
+Create a 90 BPM signal with a time signature of 3/4 and subdivision of <img src="https://github.com/manuelescrig/RhythmBox/blob/master/Resources/4.png" height="50">
 
 ```swift
 
@@ -193,8 +182,6 @@ rhythmBox.perform {CurrentBeat, CurrentSubBeat, CurrentNote in
     print("CurrentBeat", CurrentBeat)
     return .resume
 }
-
-
 ```
 
 
