@@ -7,18 +7,35 @@
 //
 
 import UIKit
+import RhythmBox
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var action: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
+    
+    @IBAction func action(_ sender: AnyObject) {
+        
 
+        let rhythmBox = RhythmBox(bpm: 120, timeSignature: (4,4))
+        rhythmBox.perform {CurrentBeat, CurrentSubBeat, CurrentNote in
+            
+            print("CurrentBeat", CurrentBeat)
+            print("CurrentSubBeat", CurrentSubBeat)
+            
+            return .resume
+        }
+        
+        
+        
+        
+        
+    }
 }
 
