@@ -193,6 +193,7 @@ open class RhythmBox {
      */
     public func setBPM(bpm: BPM) {
         _bpm = bpm
+        restart()
     }
     
     /**
@@ -201,6 +202,7 @@ open class RhythmBox {
      */
     public func setTimeSignature(timeSignature: TimeSignature) {
         _timeSignature = timeSignature
+        restart()
     }
     
     /**
@@ -209,6 +211,7 @@ open class RhythmBox {
      */
     public func setSubdivision(subdivision: Subdivision) {
         _subdivision = subdivision
+        restart()
     }
     
     /**
