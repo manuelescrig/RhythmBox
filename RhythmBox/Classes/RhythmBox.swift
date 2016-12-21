@@ -182,6 +182,7 @@ open class RhythmBox {
      */
     deinit {
         _timer?.invalidate()
+        _timer = nil
     }
     
     
