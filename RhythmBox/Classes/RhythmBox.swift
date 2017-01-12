@@ -96,28 +96,28 @@ open class RhythmBox {
     // MARK: - Private properties
     
     /// The value in beats per minute
-    fileprivate var _bpm: BPM
+    fileprivate var bpm: BPM
     
     /// The time signature
-    fileprivate var _timeSignature: TimeSignature
+    fileprivate var timeSignature: TimeSignature
     
     /// The current beat value
-    fileprivate var _currentBeat: CurrentBeat
+    fileprivate var currentBeat: CurrentBeat
     
     /// The current sub beat value
-    fileprivate var _currentSubBeat: CurrentSubBeat
+    fileprivate var currentSubBeat: CurrentSubBeat
     
     /// The current note value
-    fileprivate var _currentNote: CurrentNote
+    fileprivate var currentNote: CurrentNote
     
     /// The subdivision value
-    fileprivate var _subdivision: Subdivision
-    
+    fileprivate var subdivision: Subdivision
+
     /// The action to perform when the timer is triggered
-    fileprivate var _performClosure: PerformClosure?
+    fileprivate var performClosure: PerformClosure?
     
     /// The timer instance
-    private weak var _timer: Timer?
+    private weak var timer: Timer?
     
     
     // MARK: - Public properties
@@ -128,9 +128,9 @@ open class RhythmBox {
     /// The time interval to use for the timer object
     public var timeInterval: TimeInterval? {
         
-        let bpm : Double = 60.0 / Double(_bpm)
-        let timeSignatureMultiplier : Double = 4 / Double(_timeSignature.lower)
-        let subdivisionMultiplier : Double = 1 / Double(_subdivision.characters.count)
+        let bpm : Double = 60.0 / Double(self.bpm)
+        let timeSignatureMultiplier : Double = 4 / Double(timeSignature.lower)
+        let subdivisionMultiplier : Double = 1 / Double(subdivision.characters.count)
         
         return bpm * timeSignatureMultiplier * subdivisionMultiplier
     }
@@ -145,12 +145,12 @@ open class RhythmBox {
      - parameter subdivision: Describe subdivision type
      */
     public init(bpm: BPM, timeSignature: TimeSignature, subdivision: Subdivision) {
-        _bpm = bpm
-        _timeSignature = timeSignature
-        _subdivision = subdivision
-        _currentBeat = 1
-        _currentSubBeat = 1
-        _currentNote = "1"
+        self.bpm = bpm
+        self.timeSignature = timeSignature
+        self.subdivision = subdivision
+        self.currentBeat = 1
+        self.currentSubBeat = 1
+        self.currentNote = "1"
     }
     
     /**
@@ -181,7 +181,7 @@ open class RhythmBox {
      Default deinit
      */
     deinit {
-        _timer?.invalidate()
+        self.timer?.invalidate()
     }
     
     
@@ -192,7 +192,7 @@ open class RhythmBox {
      - parameter bpm: The value in beats per minute
      */
     public func setBPM(bpm: BPM) {
-        _bpm = bpm
+        self.bpm = bpm
     }
     
     /**
@@ -200,7 +200,7 @@ open class RhythmBox {
      - parameter timeSignature: Describe the time signature with two numerals
      */
     public func setTimeSignature(timeSignature: TimeSignature) {
-        _timeSignature = timeSignature
+        self.timeSignature = timeSignature
     }
     
     /**
@@ -208,7 +208,7 @@ open class RhythmBox {
      - parameter subdivision: Describe subdivision type
      */
     public func setSubdivision(subdivision: Subdivision) {
-        _subdivision = subdivision
+        self.subdivision = subdivision
     }
     
     /**
@@ -217,13 +217,13 @@ open class RhythmBox {
      the trigger. Return 'resume' to continue, return 'pause' to stop it
      */
     public func perform(closure: @escaping PerformClosure) {
-        guard _timer == nil else { return }
+        guard timer == nil else { return }
         guard let interval = timeInterval else { return }
         
         isStopped = false
-        _currentBeat = 1
-        _performClosure = closure
-        _timer = Timer.scheduledTimer(
+        currentBeat = 1
+        performClosure = closure
+        timer = Timer.scheduledTimer(
             timeInterval: interval,
             target: self,
             selector: .Triggered,
@@ -236,8 +236,8 @@ open class RhythmBox {
      Stops the 'RhythmBox' timer
      */
     public func stop() {
-        _timer?.invalidate()
-        _timer = nil
+        timer?.invalidate()
+        timer = nil
         
         isStopped = true
     }
@@ -247,7 +247,7 @@ open class RhythmBox {
      */
     public func restart() {
         stop()
-        guard let _performClosure = _performClosure else { return }
+        guard let _performClosure = performClosure else { return }
         _ = perform(closure: _performClosure)
     }
 }
@@ -262,22 +262,21 @@ fileprivate extension RhythmBox {
      */
     @objc func _trigger(timer: Timer) {
         
-        let pattern = _subdivision.characters
+        let pattern = subdivision.characters
         
-        _currentSubBeat = _currentSubBeat + 1
-        if (_currentSubBeat > pattern.count) {
-            _currentSubBeat = 1
+        currentSubBeat = currentSubBeat + 1
+        if (currentSubBeat > pattern.count) {
+            currentSubBeat = 1
             
-            _currentBeat = _currentBeat + 1
-            if (_currentBeat > _timeSignature.upper) {
-                _currentBeat = 1
+            currentBeat = currentBeat + 1
+            if (currentBeat > timeSignature.upper) {
+                currentBeat = 1
             }
         }
         
+        currentNote = pattern[pattern.index(pattern.startIndex, offsetBy: currentSubBeat - 1 )]
         
-        _currentNote = pattern[pattern.index(pattern.startIndex, offsetBy: _currentSubBeat - 1 )]
-        
-        let stopTimer = _performClosure?(_currentBeat, _currentSubBeat, _currentNote).shouldStop ?? false
+        let stopTimer = performClosure?(currentBeat, currentSubBeat, currentNote).shouldStop ?? false
         guard stopTimer else { return }
         stop()
         
