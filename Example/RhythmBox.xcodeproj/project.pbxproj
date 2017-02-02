@@ -13,6 +13,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		6498FF011E438E8600896C5F /* RhythmBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6498FEFF1E438E1600896C5F /* RhythmBoxTests.swift */; };
 		6DB695DFB44CCA19CEB97A51 /* Pods_RhythmBox_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDABF3ABC6CEAFC54CDD683 /* Pods_RhythmBox_Tests.framework */; };
 		E798547FEFCF9ABE9B9AEBC9 /* Pods_RhythmBox_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1365CFB1C6538FB95B8A02D2 /* Pods_RhythmBox_Example.framework */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		607FACE51AFB9204008FA782 /* RhythmBox_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RhythmBox_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		6498FEFF1E438E1600896C5F /* RhythmBoxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RhythmBoxTests.swift; sourceTree = "<group>"; };
 		9798DAAE423CB8A616273D06 /* RhythmBox.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RhythmBox.podspec; path = ../RhythmBox.podspec; sourceTree = "<group>"; };
 		98E8A20B4EAB8184B0270CFE /* Pods-RhythmBox_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RhythmBox_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RhythmBox_Example/Pods-RhythmBox_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9ACE900D4F82BD10D07D8C25 /* Pods-RhythmBox_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RhythmBox_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RhythmBox_Example/Pods-RhythmBox_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				6498FEFF1E438E1600896C5F /* RhythmBoxTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -371,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				6498FF011E438E8600896C5F /* RhythmBoxTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,6 +535,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RhythmBox_Example.app/RhythmBox_Example";
 			};
 			name = Debug;
 		};
@@ -547,6 +552,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RhythmBox_Example.app/RhythmBox_Example";
 			};
 			name = Release;
 		};
