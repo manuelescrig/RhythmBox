@@ -3,7 +3,7 @@
 # RhythmBox
 A **Rhythm Box** System for your iOS app 🎵. The easiest way to create **Music Rhythm Patterns** in Swift.
 
-[![CI Status](http://img.shields.io/travis/manuelescrig/RhythmBox.svg?style=flat)](https://travis-ci.org/manuelescrig/RhythmBox)
+[![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=589332f8c8fcc401007586ce&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/589332f8c8fcc401007586ce/build/latest?branch=master)
 [![Version](https://img.shields.io/cocoapods/v/RhythmBox.svg?style=flat)](http://cocoapods.org/pods/RhythmBox)
 [![License](https://img.shields.io/cocoapods/l/RhythmBox.svg?style=flat)](http://cocoapods.org/pods/RhythmBox)
 [![Platform](https://img.shields.io/cocoapods/p/RhythmBox.svg?style=flat)](http://cocoapods.org/pods/RhythmBox)
