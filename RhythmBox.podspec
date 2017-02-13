@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RhythmBox'
-  s.version          = '1.0.1'
+  s.version          = '1.1.0'
   s.summary          = 'A Rhythm Box System for your iOS app 🎵'
   s.description      = <<-DESC
 The easiest way to create Music Rhythm Patterns in Swift. A **Rhythm Box** System for your iOS app 🎵.
